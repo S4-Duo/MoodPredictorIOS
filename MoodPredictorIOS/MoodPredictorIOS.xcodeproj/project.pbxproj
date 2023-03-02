@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0980BEEF29B098BC00492775 /* GoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0980BEEE29B098BC00492775 /* GoogleLogin.swift */; };
+		0980BEF229B09AE900492775 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0980BEF129B09AE900492775 /* FirebaseAuth */; };
+		0980BEF529B09B4B00492775 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0980BEF429B09B4B00492775 /* GoogleSignIn */; };
+		0980BEF729B09B4B00492775 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0980BEF629B09B4B00492775 /* GoogleSignInSwift */; };
 		09BD797B299A310A005F5ABC /* MoodPredictorIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD797A299A310A005F5ABC /* MoodPredictorIOSApp.swift */; };
 		09BD797D299A310A005F5ABC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD797C299A310A005F5ABC /* ContentView.swift */; };
 		09BD797F299A310C005F5ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BD797E299A310C005F5ABC /* Assets.xcassets */; };
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0980BEEE29B098BC00492775 /* GoogleLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLogin.swift; sourceTree = "<group>"; };
 		09BD7977299A310A005F5ABC /* MoodPredictorIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodPredictorIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BD797A299A310A005F5ABC /* MoodPredictorIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPredictorIOSApp.swift; sourceTree = "<group>"; };
 		09BD797C299A310A005F5ABC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0980BEF729B09B4B00492775 /* GoogleSignInSwift in Frameworks */,
+				0980BEF229B09AE900492775 /* FirebaseAuth in Frameworks */,
+				0980BEF529B09B4B00492775 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0980BEED29B0989700492775 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0980BEEE29B098BC00492775 /* GoogleLogin.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		09BD796E299A310A005F5ABC = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +110,7 @@
 		09BD7979299A310A005F5ABC /* MoodPredictorIOS */ = {
 			isa = PBXGroup;
 			children = (
+				0980BEED29B0989700492775 /* Components */,
 				09BD797A299A310A005F5ABC /* MoodPredictorIOSApp.swift */,
 				09BD797C299A310A005F5ABC /* ContentView.swift */,
 				09BD797E299A310C005F5ABC /* Assets.xcassets */,
@@ -143,6 +160,11 @@
 			dependencies = (
 			);
 			name = MoodPredictorIOS;
+			packageProductDependencies = (
+				0980BEF129B09AE900492775 /* FirebaseAuth */,
+				0980BEF429B09B4B00492775 /* GoogleSignIn */,
+				0980BEF629B09B4B00492775 /* GoogleSignInSwift */,
+			);
 			productName = MoodPredictorIOS;
 			productReference = 09BD7977299A310A005F5ABC /* MoodPredictorIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,10 @@
 				Base,
 			);
 			mainGroup = 09BD796E299A310A005F5ABC;
+			packageReferences = (
+				0980BEF029B09AE900492775 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0980BEF329B09B4B00492775 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 09BD7978299A310A005F5ABC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +285,7 @@
 			files = (
 				09BD797D299A310A005F5ABC /* ContentView.swift in Sources */,
 				09BD797B299A310A005F5ABC /* MoodPredictorIOSApp.swift in Sources */,
+				0980BEEF29B098BC00492775 /* GoogleLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +604,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0980BEF029B09AE900492775 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		0980BEF329B09B4B00492775 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0980BEF129B09AE900492775 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0980BEF029B09AE900492775 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0980BEF429B09B4B00492775 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0980BEF329B09B4B00492775 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		0980BEF629B09B4B00492775 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0980BEF329B09B4B00492775 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09BD796F299A310A005F5ABC /* Project object */;
 }
