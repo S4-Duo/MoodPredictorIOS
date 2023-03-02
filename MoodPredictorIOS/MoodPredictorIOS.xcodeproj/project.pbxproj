@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0980BEEF29B098BC00492775 /* GoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0980BEEE29B098BC00492775 /* GoogleLogin.swift */; };
+		097BC91129B0B5C40060E726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BC91029B0B5C40060E726 /* AppDelegate.swift */; };
+		097BC91429B0B6F30060E726 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BC91329B0B6F30060E726 /* Home.swift */; };
+		097BC91829B0B8EC0060E726 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097BC91729B0B8EC0060E726 /* +View.swift */; };
+		097BC91A29B0BC810060E726 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 097BC91929B0BC810060E726 /* GoogleService-Info.plist */; };
 		0980BEF229B09AE900492775 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0980BEF129B09AE900492775 /* FirebaseAuth */; };
 		0980BEF529B09B4B00492775 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 0980BEF429B09B4B00492775 /* GoogleSignIn */; };
 		0980BEF729B09B4B00492775 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0980BEF629B09B4B00492775 /* GoogleSignInSwift */; };
+		0980BF0229B0A6FB00492775 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0980BF0129B0A6FB00492775 /* GoogleSignInButton.swift */; };
 		09BD797B299A310A005F5ABC /* MoodPredictorIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD797A299A310A005F5ABC /* MoodPredictorIOSApp.swift */; };
 		09BD797D299A310A005F5ABC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD797C299A310A005F5ABC /* ContentView.swift */; };
 		09BD797F299A310C005F5ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BD797E299A310C005F5ABC /* Assets.xcassets */; };
@@ -42,7 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0980BEEE29B098BC00492775 /* GoogleLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLogin.swift; sourceTree = "<group>"; };
+		097BC91029B0B5C40060E726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		097BC91329B0B6F30060E726 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		097BC91729B0B8EC0060E726 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
+		097BC91929B0BC810060E726 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0980BEFC29B09F4800492775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0980BF0129B0A6FB00492775 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		09BD7977299A310A005F5ABC /* MoodPredictorIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodPredictorIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BD797A299A310A005F5ABC /* MoodPredictorIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPredictorIOSApp.swift; sourceTree = "<group>"; };
 		09BD797C299A310A005F5ABC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,12 +96,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0980BEED29B0989700492775 /* Components */ = {
+		097BC90F29B0B5B50060E726 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				0980BEEE29B098BC00492775 /* GoogleLogin.swift */,
+				097BC91029B0B5C40060E726 /* AppDelegate.swift */,
+				097BC91729B0B8EC0060E726 /* +View.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		097BC91229B0B6B10060E726 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0980BF0129B0A6FB00492775 /* GoogleSignInButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		0980BF0029B0A6E200492775 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				097BC91329B0B6F30060E726 /* Home.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		09BD796E299A310A005F5ABC = {
@@ -118,9 +144,17 @@
 		09BD7979299A310A005F5ABC /* MoodPredictorIOS */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				C5D6563029B0A4B200178EE9 /* Services */,
 				C5D6562829B0A10800178EE9 /* Views */,
 				0980BEED29B0989700492775 /* Components */,
+=======
+				097BC91929B0BC810060E726 /* GoogleService-Info.plist */,
+				097BC91229B0B6B10060E726 /* Components */,
+				097BC90F29B0B5B50060E726 /* Helper */,
+				0980BF0029B0A6E200492775 /* Views */,
+				0980BEFC29B09F4800492775 /* Info.plist */,
+>>>>>>> Stashed changes
 				09BD797A299A310A005F5ABC /* MoodPredictorIOSApp.swift */,
 				09BD797E299A310C005F5ABC /* Assets.xcassets */,
 				09BD7980299A310C005F5ABC /* Preview Content */,
@@ -287,6 +321,7 @@
 			files = (
 				09BD7982299A310C005F5ABC /* Preview Assets.xcassets in Resources */,
 				09BD797F299A310C005F5ABC /* Assets.xcassets in Resources */,
+				097BC91A29B0BC810060E726 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,13 +346,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				C5D6563329B0A61400178EE9 /* CameraService.swift in Sources */,
+=======
+				097BC91129B0B5C40060E726 /* AppDelegate.swift in Sources */,
+>>>>>>> Stashed changes
 				09BD797D299A310A005F5ABC /* ContentView.swift in Sources */,
+				097BC91429B0B6F30060E726 /* Home.swift in Sources */,
+				097BC91829B0B8EC0060E726 /* +View.swift in Sources */,
+				0980BF0229B0A6FB00492775 /* GoogleSignInButton.swift in Sources */,
 				09BD797B299A310A005F5ABC /* MoodPredictorIOSApp.swift in Sources */,
+<<<<<<< Updated upstream
 				C50B5A7B29B0A9E1006BEBB7 /* HomeView.swift in Sources */,
 				0980BEEF29B098BC00492775 /* GoogleLogin.swift in Sources */,
 				C5D6562A29B0A2F300178EE9 /* CameraView.swift in Sources */,
 				C50B5A7D29B0AAB5006BEBB7 /* CustomCameraView.swift in Sources */,
+=======
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +524,11 @@
 				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+<<<<<<< Updated upstream
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need to use camera";
+=======
+				INFOPLIST_FILE = MoodPredictorIOS/Info.plist;
+>>>>>>> Stashed changes
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -509,7 +558,11 @@
 				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+<<<<<<< Updated upstream
 				INFOPLIST_KEY_NSCameraUsageDescription = "Need to use camera";
+=======
+				INFOPLIST_FILE = MoodPredictorIOS/Info.plist;
+>>>>>>> Stashed changes
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

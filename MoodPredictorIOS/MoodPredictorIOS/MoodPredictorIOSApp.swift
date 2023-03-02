@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
 
 @main
 struct MoodPredictorIOSApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @AppStorage("signIn") var isSignIn = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if !isSignIn{
+                ContentView()
+            } else{
+                Home()
+            }
         }
     }
 }
