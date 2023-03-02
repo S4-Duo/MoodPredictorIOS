@@ -18,6 +18,10 @@
 		09BD798C299A310C005F5ABC /* MoodPredictorIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD798B299A310C005F5ABC /* MoodPredictorIOSTests.swift */; };
 		09BD7996299A310C005F5ABC /* MoodPredictorIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD7995299A310C005F5ABC /* MoodPredictorIOSUITests.swift */; };
 		09BD7998299A310C005F5ABC /* MoodPredictorIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD7997299A310C005F5ABC /* MoodPredictorIOSUITestsLaunchTests.swift */; };
+		C50B5A7B29B0A9E1006BEBB7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B5A7A29B0A9E1006BEBB7 /* HomeView.swift */; };
+		C50B5A7D29B0AAB5006BEBB7 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B5A7C29B0AAB5006BEBB7 /* CustomCameraView.swift */; };
+		C5D6562A29B0A2F300178EE9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D6562929B0A2F300178EE9 /* CameraView.swift */; };
+		C5D6563329B0A61400178EE9 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D6563129B0A4B300178EE9 /* CameraService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		09BD7991299A310C005F5ABC /* MoodPredictorIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodPredictorIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BD7995299A310C005F5ABC /* MoodPredictorIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPredictorIOSUITests.swift; sourceTree = "<group>"; };
 		09BD7997299A310C005F5ABC /* MoodPredictorIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPredictorIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C50B5A7A29B0A9E1006BEBB7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C50B5A7C29B0AAB5006BEBB7 /* CustomCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCameraView.swift; path = "../../../../Prototype-AIMoodDetection-IOS/Prototype-AIMoodDetection-IOS/Prototype-AIMoodDetection-IOS/CustomCameraView.swift"; sourceTree = "<group>"; };
+		C5D6562929B0A2F300178EE9 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = "../../../../Prototype-AIMoodDetection-IOS/Prototype-AIMoodDetection-IOS/Prototype-AIMoodDetection-IOS/CameraView.swift"; sourceTree = "<group>"; };
+		C5D6563129B0A4B300178EE9 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +118,10 @@
 		09BD7979299A310A005F5ABC /* MoodPredictorIOS */ = {
 			isa = PBXGroup;
 			children = (
+				C5D6563029B0A4B200178EE9 /* Services */,
+				C5D6562829B0A10800178EE9 /* Views */,
 				0980BEED29B0989700492775 /* Components */,
 				09BD797A299A310A005F5ABC /* MoodPredictorIOSApp.swift */,
-				09BD797C299A310A005F5ABC /* ContentView.swift */,
 				09BD797E299A310C005F5ABC /* Assets.xcassets */,
 				09BD7980299A310C005F5ABC /* Preview Content */,
 			);
@@ -142,6 +151,25 @@
 				09BD7997299A310C005F5ABC /* MoodPredictorIOSUITestsLaunchTests.swift */,
 			);
 			path = MoodPredictorIOSUITests;
+			sourceTree = "<group>";
+		};
+		C5D6562829B0A10800178EE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C50B5A7C29B0AAB5006BEBB7 /* CustomCameraView.swift */,
+				C5D6562929B0A2F300178EE9 /* CameraView.swift */,
+				09BD797C299A310A005F5ABC /* ContentView.swift */,
+				C50B5A7A29B0A9E1006BEBB7 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5D6563029B0A4B200178EE9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C5D6563129B0A4B300178EE9 /* CameraService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D6563329B0A61400178EE9 /* CameraService.swift in Sources */,
 				09BD797D299A310A005F5ABC /* ContentView.swift in Sources */,
 				09BD797B299A310A005F5ABC /* MoodPredictorIOSApp.swift in Sources */,
+				C50B5A7B29B0A9E1006BEBB7 /* HomeView.swift in Sources */,
 				0980BEEF29B098BC00492775 /* GoogleLogin.swift in Sources */,
+				C5D6562A29B0A2F300178EE9 /* CameraView.swift in Sources */,
+				C50B5A7D29B0AAB5006BEBB7 /* CustomCameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,8 +476,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodPredictorIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to use camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,8 +506,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodPredictorIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Need to use camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
